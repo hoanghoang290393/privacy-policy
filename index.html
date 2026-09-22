@@ -1,0 +1,233 @@
+<title>Studio Privacy Policy</title>
+<style>
+  :root{
+    --bg:#FAFAF8; --surface:#FFFFFF; --surface-2:#F2F1EC;
+    --text:#1C1B1F; --muted:#68666E; --border:#E4E2DA;
+    --accent:#4A5FD9; --accent-soft:#EEF0FC;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#101014; --surface:#17171D; --surface-2:#1D1D24;
+      --text:#EDEDF2; --muted:#9C9AA5; --border:#2B2A33;
+      --accent:#8FA0FF; --accent-soft:#1D2140;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#101014; --surface:#17171D; --surface-2:#1D1D24;
+    --text:#EDEDF2; --muted:#9C9AA5; --border:#2B2A33;
+    --accent:#8FA0FF; --accent-soft:#1D2140;
+  }
+  * { box-sizing: border-box; }
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding-inline:20px; padding-block:0;
+    line-height:1.6;
+  }
+  a{ color:var(--accent); }
+  h1,h2{
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    text-wrap:balance;
+    letter-spacing:-0.01em;
+  }
+  .wrap{ max-width:720px; margin:0 auto; }
+  header.top{
+    position:sticky; top:env(safe-area-inset-top,0px);
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border);
+    padding-block:14px;
+    z-index:10;
+  }
+  header.top .row{
+    max-width:720px; margin:0 auto;
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+  }
+  .studio-mark{
+    width:28px; height:28px; border-radius:8px;
+    background:linear-gradient(135deg, var(--accent), #B3D1FF);
+    flex:none;
+  }
+  .top-title{ font-weight:600; font-size:15px; }
+  .top-apps{ font-size:12.5px; color:var(--muted); margin-left:auto; }
+  main{ padding-block:36px 64px; }
+  .eyebrow{
+    font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); font-weight:600; margin-bottom:10px;
+  }
+  h1{ font-size:clamp(28px,6vw,38px); margin:0 0 6px; }
+  .dek{ color:var(--muted); font-size:15.5px; margin:0 0 28px; }
+  .apps-strip{
+    display:flex; gap:10px; flex-wrap:wrap; margin-bottom:34px;
+  }
+  .app-chip{
+    display:flex; align-items:center; gap:8px;
+    border:1px solid var(--border); background:var(--surface);
+    border-radius:999px; padding:7px 14px 7px 8px; font-size:13.5px;
+  }
+  .app-dot{ width:9px; height:9px; border-radius:50%; flex:none; }
+  .dot-claw{ background:#E07A3F; }
+  .dot-wisp{ background:#6FE3C4; }
+  .dot-moon{ background:#8FA0FF; }
+  nav.toc{
+    border:1px solid var(--border); background:var(--surface);
+    border-radius:12px; padding:16px 18px; margin-bottom:36px;
+  }
+  nav.toc p{ margin:0 0 8px; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); font-weight:600; }
+  nav.toc ol{ margin:0; padding-left:20px; font-size:14.5px; columns:2; column-gap:20px; }
+  nav.toc li{ margin-bottom:6px; break-inside:avoid; }
+  section{ margin-bottom:40px; scroll-margin-top:70px; }
+  section h2{ font-size:21px; margin:0 0 12px; display:flex; align-items:center; gap:10px; }
+  .num{
+    font-family:"Source Sans 3", sans-serif; font-variant-numeric:tabular-nums;
+    color:var(--accent); font-weight:700; font-size:15px;
+    background:var(--accent-soft); width:26px; height:26px; border-radius:7px;
+    display:inline-flex; align-items:center; justify-content:center; flex:none;
+  }
+  p{ margin:0 0 12px; font-size:15.5px; }
+  ul{ margin:0 0 12px; padding-left:22px; }
+  li{ margin-bottom:6px; font-size:15.5px; }
+  .card{
+    border:1px solid var(--border); background:var(--surface);
+    border-radius:12px; padding:18px 20px; margin:16px 0;
+  }
+  table{ width:100%; border-collapse:collapse; font-size:14.5px; margin:14px 0; }
+  th,td{ text-align:left; padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:top; }
+  th{ color:var(--muted); font-weight:600; font-size:12.5px; text-transform:uppercase; letter-spacing:.04em; }
+  tr:last-child td{ border-bottom:none; }
+  .tbl-wrap{ overflow-x:auto; }
+  .pill{
+    display:inline-block; font-size:12px; font-weight:600;
+    padding:3px 9px; border-radius:999px; background:var(--surface-2); color:var(--muted);
+  }
+  .contact{
+    border:1px solid var(--border); background:var(--surface-2);
+    border-radius:14px; padding:22px 24px;
+  }
+  .contact a{ font-weight:600; }
+  footer{
+    max-width:720px; margin:0 auto; padding-bottom:40px;
+    color:var(--muted); font-size:13px;
+  }
+  code{
+    background:var(--surface-2); border-radius:5px; padding:1px 6px; font-size:13.5px;
+  }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Source+Sans+3:wght@400;600;700&display=swap">
+
+<header class="top">
+  <div class="row">
+    <div class="studio-mark" aria-hidden="true"></div>
+    <span class="top-title">Privacy Policy</span>
+    <span class="top-apps">Clawhalla · Wispwake · Moonlatch</span>
+  </div>
+</header>
+
+<div class="wrap">
+<main>
+  <div class="eyebrow">Effective September 22, 2026</div>
+  <h1>Privacy Policy</h1>
+  <p class="dek">This policy covers three iOS games published by an independent developer: <strong>Clawhalla</strong>, <strong>Wispwake</strong>, and <strong>Moonlatch</strong>. It explains what data each app touches, and what it doesn't.</p>
+
+  <div class="apps-strip">
+    <span class="app-chip"><span class="app-dot dot-claw"></span>Clawhalla</span>
+    <span class="app-chip"><span class="app-dot dot-wisp"></span>Wispwake</span>
+    <span class="app-chip"><span class="app-dot dot-moon"></span>Moonlatch</span>
+  </div>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#local">Data stored on your device</a></li>
+      <li><a href="#ads">Advertising (Google AdMob)</a></li>
+      <li><a href="#iap">Purchases (Apple App Store)</a></li>
+      <li><a href="#tracking">App Tracking Transparency</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#rights">Your choices &amp; rights</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="summary">
+    <h2><span class="num">1</span>Summary</h2>
+    <p>None of these apps require an account, a sign-in, or your name, email, or location to play. There are no servers storing your progress — saves live only on your device. The only outside data flow is standard, well-known services built into iOS: <strong>Google AdMob</strong> for optional rewarded video ads, and <strong>Apple's App Store</strong> for in-app purchases. Neither the developer nor these apps ever see your payment details.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Data type</th><th>Collected by the app itself?</th><th>Collected by a third party?</th></tr></thead>
+        <tbody>
+          <tr><td>Name, email, phone, address</td><td>No</td><td>No</td></tr>
+          <tr><td>Precise or approximate location</td><td>No</td><td>No</td></tr>
+          <tr><td>Photos, camera, microphone, contacts</td><td>No</td><td>No</td></tr>
+          <tr><td>Gameplay save data (scores, unlocks, settings)</td><td>Yes — stored locally on your device only</td><td>No</td></tr>
+          <tr><td>Device / advertising identifiers</td><td>No</td><td>Yes — by Google AdMob, only while an ad is shown, and only if you allow tracking</td></tr>
+          <tr><td>Purchase &amp; payment information</td><td>No</td><td>Yes — handled entirely by Apple</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="local">
+    <h2><span class="num">2</span>Data stored on your device</h2>
+    <p>Each app saves your progress — best scores, unlocked characters or skins, settings like music and haptics — in a local save file on your iPhone. This data:</p>
+    <ul>
+      <li>never leaves your device or reaches the developer;</li>
+      <li>is not linked to your identity in any way;</li>
+      <li>is permanently deleted the moment you uninstall the app.</li>
+    </ul>
+  </section>
+
+  <section id="ads">
+    <h2><span class="num">3</span>Advertising (Google AdMob)</h2>
+    <p>Some apps offer an optional "watch an ad" button that rewards you with in-game currency or a bonus. These ads are served by <strong>Google AdMob</strong>. When an ad is shown, Google may collect device and advertising identifiers, coarse device information, and ad-interaction data to select and measure ads, as described in <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. This only happens when you choose to watch an ad — it is never required to play.</p>
+    <div class="card">
+      <span class="pill">Your control</span>
+      <p style="margin-top:10px;margin-bottom:0;">You can limit this at any time in <strong>iPhone Settings → Privacy &amp; Security → Tracking</strong>, or by declining the tracking prompt described below. Ads still play if you decline — they're just less personalized.</p>
+    </div>
+  </section>
+
+  <section id="iap">
+    <h2><span class="num">4</span>Purchases (Apple App Store)</h2>
+    <p>Where an app offers in-app purchases (for example, in-game currency packs or an ad-removal purchase), the entire transaction — your payment method, billing details, and receipt — is handled by Apple's App Store. The developer only receives confirmation that a purchase was made, never your card or account details. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a> for how Apple handles this.</p>
+  </section>
+
+  <section id="tracking">
+    <h2><span class="num">5</span>App Tracking Transparency</h2>
+    <p>On first launch (or before your first ad), iOS may show Apple's standard tracking permission prompt. Choosing <strong>"Ask App Not to Track"</strong> fully disables cross-app tracking — the app and its ad partner will not use your device's advertising identifier to personalize ads to you, and every feature, including rewarded ads, keeps working normally.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">6</span>Children's privacy</h2>
+    <p>These apps are general-audience games and are not directed at children under 13, and the developer does not knowingly collect personal information from children. If you believe a child has provided personal information through one of these apps, contact us using the details below and it will be removed.</p>
+  </section>
+
+  <section id="rights">
+    <h2><span class="num">7</span>Your choices &amp; rights</h2>
+    <p>Because no account or server-side profile exists, there is no personal data on file to request, export, or delete beyond what's already under your control:</p>
+    <ul>
+      <li><strong>Delete everything instantly:</strong> uninstall the app — the local save is removed with it.</li>
+      <li><strong>Opt out of ad personalization:</strong> decline the tracking prompt, or turn off tracking in iPhone Settings at any time.</li>
+      <li><strong>Manage or refund a purchase:</strong> through your Apple ID account, under <em>Settings → [your name] → Subscriptions/Purchase History</em>.</li>
+    </ul>
+    <p>If you're in the EU/UK, CCPA-covered in California, or anywhere else with data-protection rights, the same applies: the developer holds no personal data store to act on, and the AdMob/Apple identifiers above are the only third-party processing involved, governed by their respective policies linked above.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">8</span>Changes to this policy</h2>
+    <p>If what these apps collect changes — for example, adding a new service — this page will be updated and the "Effective" date at the top will change accordingly. Significant changes will also be noted in the app's "What's New" release notes.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">9</span>Contact</h2>
+    <div class="contact">
+      <p style="margin-bottom:6px;">Questions about this policy, or a request related to your data:</p>
+      <p style="margin-bottom:0;"><a href="mailto:hoanghoang29031993@gmail.com">hoanghoang29031993@gmail.com</a></p>
+    </div>
+  </section>
+</main>
+<footer>
+  Independent developer · Clawhalla, Wispwake, Moonlatch for iOS
+</footer>
+</div>
