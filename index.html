@@ -126,7 +126,7 @@
 
 <div class="wrap">
 <main>
-  <div class="eyebrow">Effective September 22, 2026</div>
+  <div class="eyebrow">Effective September 27, 2026</div>
   <h1>Privacy Policy</h1>
   <p class="dek">This policy covers three iOS games published by an independent developer: <strong>Clawhalla</strong>, <strong>Wispwake</strong>, and <strong>Moonlatch</strong>. It explains what data each app touches, and what it doesn't.</p>
 
@@ -159,10 +159,12 @@
         <thead><tr><th>Data type</th><th>Collected by the app itself?</th><th>Collected by a third party?</th></tr></thead>
         <tbody>
           <tr><td>Name, email, phone, address</td><td>No</td><td>No</td></tr>
-          <tr><td>Precise or approximate location</td><td>No</td><td>No</td></tr>
+          <tr><td>Precise location</td><td>No</td><td>No</td></tr>
+          <tr><td>Approximate location (estimated from IP address)</td><td>No</td><td>Yes — by Google AdMob, to select and measure ads</td></tr>
           <tr><td>Photos, camera, microphone, contacts</td><td>No</td><td>No</td></tr>
           <tr><td>Gameplay save data (scores, unlocks, settings)</td><td>Yes — stored locally on your device only</td><td>No</td></tr>
-          <tr><td>Device / advertising identifiers</td><td>No</td><td>Yes — by Google AdMob, only while an ad is shown, and only if you allow tracking</td></tr>
+          <tr><td>Device identifiers (the advertising identifier only if you allow tracking)</td><td>No</td><td>Yes — by Google AdMob</td></tr>
+          <tr><td>Ad interactions, app interactions, performance and crash diagnostics</td><td>No</td><td>Yes — by Google AdMob, for advertising, ad measurement and analytics</td></tr>
           <tr><td>Purchase &amp; payment information</td><td>No</td><td>Yes — handled entirely by Apple</td></tr>
         </tbody>
       </table>
@@ -181,7 +183,8 @@
 
   <section id="ads">
     <h2><span class="num">3</span>Advertising (Google AdMob)</h2>
-    <p>Some apps offer an optional "watch an ad" button that rewards you with in-game currency or a bonus. These ads are served by <strong>Google AdMob</strong>. When an ad is shown, Google may collect device and advertising identifiers, coarse device information, and ad-interaction data to select and measure ads, as described in <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. This only happens when you choose to watch an ad — it is never required to play.</p>
+    <p>Some apps offer an optional "watch an ad" button that rewards you with in-game currency or a bonus. These ads are served by <strong>Google AdMob</strong>. The Google Mobile Ads SDK starts when the app opens and loads an ad in the background so it is ready if you tap the button. While doing so, Google may collect: a device identifier (the advertising identifier only if you allow tracking), an approximate location estimated from your IP address, which ads you saw and interacted with, how you interact with the app, and app performance and crash diagnostics. Google uses this to serve, measure and improve ads and to prevent fraud, as described in <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from apps that use its services</a>. Google keeps this data according to its own retention periods. Watching an ad is never required to play.</p>
+    <p>Third parties that receive data from these apps (Google for ads, Apple for purchases) are required to protect it at a level equal to or greater than described in this policy and as required by the App Store Review Guidelines. No data is sold, and no data is shared with any other party.</p>
     <div class="card">
       <span class="pill">Your control</span>
       <p style="margin-top:10px;margin-bottom:0;">You can limit this at any time in <strong>iPhone Settings → Privacy &amp; Security → Tracking</strong>, or by declining the tracking prompt described below. Ads still play if you decline — they're just less personalized.</p>
