@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manivo Privacy Policy</title>
+<style>
+  :root{
+    --bg:#FAFAF8; --surface:#FFFFFF; --surface-2:#F2F1EC;
+    --text:#1C1B1F; --muted:#68666E; --border:#E4E2DA;
+    --accent:#6A4CFF; --accent-soft:#EFEBFF;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#101014; --surface:#17171D; --surface-2:#1D1D24;
+      --text:#EDEDF2; --muted:#9C9AA5; --border:#2B2A33;
+      --accent:#9C87FF; --accent-soft:#221C40;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#101014; --surface:#17171D; --surface-2:#1D1D24;
+    --text:#EDEDF2; --muted:#9C9AA5; --border:#2B2A33;
+    --accent:#9C87FF; --accent-soft:#221C40;
+  }
+  * { box-sizing: border-box; }
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding-inline:20px; padding-block:0;
+    line-height:1.6;
+  }
+  a{ color:var(--accent); }
+  h1,h2{
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    text-wrap:balance;
+    letter-spacing:-0.01em;
+  }
+  .wrap{ max-width:720px; margin:0 auto; }
+  header.top{
+    position:sticky; top:env(safe-area-inset-top,0px);
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border);
+    padding-block:14px;
+    z-index:10;
+  }
+  header.top .row{
+    max-width:720px; margin:0 auto;
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+  }
+  .studio-mark{
+    width:28px; height:28px; border-radius:8px;
+    background:linear-gradient(135deg, var(--accent), #B3D1FF);
+    flex:none;
+  }
+  .top-title{ font-weight:600; font-size:15px; }
+  .top-apps{ font-size:12.5px; color:var(--muted); margin-left:auto; }
+  main{ padding-block:36px 64px; }
+  .eyebrow{
+    font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); font-weight:600; margin-bottom:10px;
+  }
+  h1{ font-size:clamp(28px,6vw,38px); margin:0 0 6px; }
+  .dek{ color:var(--muted); font-size:15.5px; margin:0 0 28px; }
+  .apps-strip{
+    display:flex; gap:10px; flex-wrap:wrap; margin-bottom:34px;
+  }
+  .app-chip{
+    display:flex; align-items:center; gap:8px;
+    border:1px solid var(--border); background:var(--surface);
+    border-radius:999px; padding:7px 14px 7px 8px; font-size:13.5px;
+  }
+  .app-dot{ width:9px; height:9px; border-radius:50%; flex:none; }
+  .dot-claw{ background:#E07A3F; }
+  .dot-wisp{ background:#6FE3C4; }
+  .dot-moon{ background:#8FA0FF; }
+  .dot-ink{ background:#1F4FD1; }
+  nav.toc{
+    border:1px solid var(--border); background:var(--surface);
+    border-radius:12px; padding:16px 18px; margin-bottom:36px;
+  }
+  nav.toc p{ margin:0 0 8px; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); font-weight:600; }
+  nav.toc ol{ margin:0; padding-left:20px; font-size:14.5px; columns:2; column-gap:20px; }
+  nav.toc li{ margin-bottom:6px; break-inside:avoid; }
+  section{ margin-bottom:40px; scroll-margin-top:70px; }
+  section h2{ font-size:21px; margin:0 0 12px; display:flex; align-items:center; gap:10px; }
+  .num{
+    font-family:"Source Sans 3", sans-serif; font-variant-numeric:tabular-nums;
+    color:var(--accent); font-weight:700; font-size:15px;
+    background:var(--accent-soft); width:26px; height:26px; border-radius:7px;
+    display:inline-flex; align-items:center; justify-content:center; flex:none;
+  }
+  p{ margin:0 0 12px; font-size:15.5px; }
+  ul{ margin:0 0 12px; padding-left:22px; }
+  li{ margin-bottom:6px; font-size:15.5px; }
+  .card{
+    border:1px solid var(--border); background:var(--surface);
+    border-radius:12px; padding:18px 20px; margin:16px 0;
+  }
+  table{ width:100%; border-collapse:collapse; font-size:14.5px; margin:14px 0; }
+  th,td{ text-align:left; padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:top; }
+  th{ color:var(--muted); font-weight:600; font-size:12.5px; text-transform:uppercase; letter-spacing:.04em; }
+  tr:last-child td{ border-bottom:none; }
+  .tbl-wrap{ overflow-x:auto; }
+  .pill{
+    display:inline-block; font-size:12px; font-weight:600;
+    padding:3px 9px; border-radius:999px; background:var(--surface-2); color:var(--muted);
+  }
+  .contact{
+    border:1px solid var(--border); background:var(--surface-2);
+    border-radius:14px; padding:22px 24px;
+  }
+  .contact a{ font-weight:600; }
+  footer{
+    max-width:720px; margin:0 auto; padding-bottom:40px;
+    color:var(--muted); font-size:13px;
+  }
+  code{
+    background:var(--surface-2); border-radius:5px; padding:1px 6px; font-size:13.5px;
+  }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Source+Sans+3:wght@400;600;700&display=swap">
+</head>
+<body>
+<header class="top">
+  <div class="row">
+    <span class="top-title">Manivo · Privacy Policy</span>
+  </div>
+</header>
+
+<div class="wrap">
+<main>
+  <div class="eyebrow">Effective October 12, 2026</div>
+  <h1>Manivo Privacy Policy</h1>
+  <p class="dek"><strong>Manivo: Nail Before &amp; After</strong> is an iOS app by an independent developer that turns two photos into a before &amp; after video. Everything happens on your iPhone. The app collects no personal data.</p>
+
+  <section id="summary">
+    <h2><span class="num">1</span>Summary</h2>
+    <p>Manivo has no account, no sign-in, no server, no ads, no analytics and no tracking. Your photos, videos, logo and notes stay on your device. The developer never receives any of it.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Data</th><th>What Manivo does</th><th>Leaves your iPhone?</th></tr></thead>
+        <tbody>
+          <tr><td>Camera</td><td>Shows a live view so you can take your after photo with your before photo as a guide</td><td>No</td></tr>
+          <tr><td>Photos you pick</td><td>Uses only the photos you choose in the iOS photo picker; the app cannot see the rest of your library</td><td>No</td></tr>
+          <tr><td>Saving to Photos</td><td>Add-only access: puts your finished video into your library; it cannot read your library</td><td>No</td></tr>
+          <tr><td>Projects, client names, notes, your logo and @handle</td><td>Stored in the app's storage on your device</td><td>No</td></tr>
+          <tr><td>Reminders</td><td>Optional local notification to take the after photo, scheduled on your device</td><td>No</td></tr>
+          <tr><td>Name, email, location, contacts, identifiers</td><td>Not collected</td><td>No</td></tr>
+          <tr><td>Purchases</td><td>Handled entirely by Apple</td><td>Only between you and Apple</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="sharing">
+    <h2><span class="num">2</span>Sharing your videos</h2>
+    <p>When you tap <strong>Save &amp; Share</strong>, the video is saved to Photos and the iOS share sheet opens. Anything you then post or send goes to the app or person you choose, under their privacy policy. Manivo can also copy a caption to your clipboard for you to paste; it does not read the clipboard.</p>
+  </section>
+
+  <section id="iap">
+    <h2><span class="num">3</span>Purchases (Apple App Store)</h2>
+    <p>Manivo Pro is sold as an auto-renewing subscription (monthly or yearly) or a one-time lifetime purchase through Apple's App Store. Apple handles your payment details and receipt; the developer only learns from StoreKit that Pro is active on your device. Manage or cancel subscriptions in <em>Settings → [your name] → Subscriptions</em>. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">4</span>Children's privacy</h2>
+    <p>Manivo is a general-audience tool for nail artists and is not directed at children under 13. It collects no personal information from anyone.</p>
+  </section>
+
+  <section id="rights">
+    <h2><span class="num">5</span>Your choices &amp; rights</h2>
+    <ul>
+      <li><strong>Delete a project:</strong> tap the trash button on its thumbnail on the Home screen.</li>
+      <li><strong>Delete everything:</strong> uninstall the app; its storage is removed with it. Videos you saved to Photos stay in your library until you delete them there.</li>
+      <li><strong>Permissions:</strong> turn camera, Photos or notifications on or off at any time in <em>iPhone Settings → Manivo</em>.</li>
+    </ul>
+    <p>Because the developer holds no data about you, there is nothing to export or erase on our side, wherever you live (EU/UK GDPR, California CCPA and similar laws).</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">6</span>Changes to this policy</h2>
+    <p>If Manivo ever starts using a new service that handles data, this page will be updated before that version is released and the date above will change.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">7</span>Contact</h2>
+    <div class="contact">
+      <p style="margin-bottom:6px;">Questions or support:</p>
+      <p style="margin-bottom:0;"><a href="mailto:hoanghoang29031993@gmail.com">hoanghoang29031993@gmail.com</a></p>
+    </div>
+  </section>
+</main>
+<footer>Independent developer · Manivo for iOS</footer>
+</div>
+</body>
+</html>
